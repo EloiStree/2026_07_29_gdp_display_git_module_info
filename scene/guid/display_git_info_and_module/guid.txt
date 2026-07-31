@@ -1,0 +1,6 @@
+AUQ3bfGfRb2erXwYXSjDqZ9GRTeVcufYMaMYNKRdzoug
+Display Submodule in project
+Display the list of submodules in the project and commit ID
+
+This demo shows how you can display the addons you added as submodules in your project.
+It also allows you to get some basic information about the current Git commit hash.

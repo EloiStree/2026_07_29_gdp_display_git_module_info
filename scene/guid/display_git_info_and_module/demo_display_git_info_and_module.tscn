@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://d2m7orq4fm77o"]
+
+[ext_resource type="Script" uid="uid://df301me8tdhrh" path="res://addons/2026_07_29_gdp_display_git_module_info/script/git_info_build_json_of_git_project.gd" id="1_a5c1u"]
+
+[node name="DemoDisplayGitInfoAndModule" type="Panel" unique_id=178040859]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=1876525493]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.9916667
+anchor_bottom = 0.9824074
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="TextEdit" type="TextEdit" parent="Panel" unique_id=695570672]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "Hello Git Submodule"
+
+[node name="GitInfoBuildJsonOfGitProject" type="Node" parent="Panel" unique_id=424556105]
+script = ExtResource("1_a5c1u")
+metadata/_custom_type_script = "uid://df301me8tdhrh"
+
+[connection signal="on_json_generated" from="Panel/GitInfoBuildJsonOfGitProject" to="Panel/TextEdit" method="set_text"]
